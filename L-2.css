@@ -1,0 +1,77 @@
+
+	
+	h1{text-align:center;}
+	ul{
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+  background-color:#0492DE;
+  text-align:center;}
+
+
+li{
+  display:inline;  
+}
+
+li a{
+  display:inline-block;
+  padding:14px 16px;
+  color:white;
+  text-align:center;
+  text-decoration:none;
+}
+
+li a:hover{
+  background-color:white;
+  color:black;
+  border:1px solid #0492DE;
+  padding:14px 14px;
+}
+
+
+body{
+  font-family:'Coronetscript';
+}
+div:target{
+  color:red;
+}
+
+.overlay {
+  /* Display over the entire page */
+  position: fixed;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.9);
+
+  /* We hide all this by default */
+  visibility: hidden;
+}
+
+.overlay img{
+  /* Maximum image size */
+  max-width: 90%;
+  max-height: 90%;
+
+  /* We keep the ratio of the image */
+  width: 90%;
+  height: 90%;
+  
+  display: block;
+  margin-top:20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom:auto;
+}
+
+.overlay:target {
+  visibility: visible;
+  outline: none;
+  cursor: default;}
+
+  #rest{
+  	background-size:cover;
+  	width:1000%;
+  }
